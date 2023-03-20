@@ -1,0 +1,55 @@
+@import url(https://lsong.org/css/stylesheet.css);
+@import url(https://lsong.org/stylesheets/panel.css);
+@import url(https://lsong.org/stylesheets/button.css);
+
+#hello {
+  display: none;
+}
+
+.panel {
+  height: 100%;
+  text-align: center;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel-body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-word {
+  font-size: 15vw;  
+}
+
+@media (orientation: landscape) {
+  html, body {
+    overflow: hidden;
+  }
+
+  .container {
+    padding: 0;
+    width: 100vw;
+  }
+
+  #app {
+    height: 95vh;
+    width: 100vw;
+  }
+
+  .panel {
+    --border-color: #fff;
+  }
+
+  .header,
+  .footer,
+  #hello,
+  #subscribe {
+    display: none !important;
+  }
+}
